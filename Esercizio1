@@ -1,0 +1,21 @@
+package esercizi;
+
+import java.util.Scanner;
+
+public class esercizio1 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Inserisci un numero:");
+		int conta = 0, tastiera = sc.nextInt();
+		int[] numeri2 = { 1, 2, 3, 4, 5, 6, 11, 20, 25, 53, 41, 32, 27 };
+		System.out.println("I valori dell'array sono:");
+		for (int i = 0; i < numeri2.length; i++) {
+			if (tastiera < numeri2[i]) {
+				conta++;
+				System.out.println(numeri2[i]);
+			} // if
+		} // for
+		System.out.println("i numeri maggiori di quello inserito sono:" + conta);
+	}// main
+}// class
