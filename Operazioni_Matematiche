@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class operazioni {
+
+	public static double somma(double n1, double n2) {
+		return n1 + n2;
+	}
+
+	public static double sottrazione(double n1, double n2) {
+		return n1 - n2;
+	}
+
+	public static double moltiplicazione(double n1, double n2) {
+		return n1 * n2;
+	}
+
+	public static double divisione(double n1, double n2) {
+		return n1 / n2;
+	}
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+
+		System.out.println("Inserisci il primo numero:");
+		double x = input.nextDouble();
+
+		System.out.println("Inserisci il secondo numero:");
+		double y = input.nextDouble();
+
+		System.out.println("La somma è:" + somma(x, y));
+		System.out.println("La sottrazione è:" + sottrazione(x, y));
+		System.out.println("La moltiplicazione da" + moltiplicazione(x, y));
+		System.out.println("La divisione da" + divisione(x, y));
+
+	}
+}
