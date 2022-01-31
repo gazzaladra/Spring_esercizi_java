@@ -19,14 +19,13 @@ import java.util.Random;
 
 	public static void main(String[] args) {
 		TestLancio d = new TestLancio(6);
-		try (Scanner in = new Scanner(System.in)) {
+		Scanner in = new Scanner(System.in);
 			System.out.println("Quanti tiri fai?");
 			int n = in.nextInt();
 			for (int i = 0; i < n; i++) {
 				int r = d.lancia();
 				System.out.println("è uscito il numero " + r);
-			} // for
-		} // try
+			} // for	
 	}// main
 }// class*/
 //lancio del dado attraverso due classi, veidi "Dado.java"
