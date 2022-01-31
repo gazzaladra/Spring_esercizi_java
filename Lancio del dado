@@ -1,7 +1,8 @@
 package Esercitazioni;
 import java.util.Scanner;
 import java.util.Random;
-public class TestLancio {
+//Lancio del dado in una unica classe
+/*public class TestLancio {
 	public TestLancio(int a) {
 		facce = a;
 		generatore = new Random();
@@ -19,7 +20,7 @@ public class TestLancio {
 	public static void main(String[] args) {
 		TestLancio d = new TestLancio(6);
 		try (Scanner in = new Scanner(System.in)) {
-			System.out.println("Quanti lanci vuoi simulare?");
+			System.out.println("Quanti tiri fai?");
 			int n = in.nextInt();
 			for (int i = 0; i < n; i++) {
 				int r = d.lancia();
@@ -27,4 +28,20 @@ public class TestLancio {
 			} // for
 		} // try
 	}// main
-}// class
+}// class*/
+//lancio del dado attraverso due classi, veidi "Dado.java"
+public class TestLancio {
+
+	  public static void main(String[] args)
+	  {
+	      Dado d = new Dado(6);
+	      Scanner in = new Scanner(System.in);
+	      System.out.println("Quanti tiri fai?");
+	      int n = in.nextInt();
+	      for( int i = 0 ; i < n ; i++)
+	      {
+	          int r = d.lancia();
+	          System.out.println("è uscito il numero " + r);
+	      }
+	  }
+	}
